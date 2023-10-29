@@ -1,0 +1,244 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3b3361;
+    font-family: sans-serif;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li {
+    color: #cabfc6; 
+    cursor: pointer;
+    font-size: 19px;
+    transition: 0.5s;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-decoration: none; 
+}
+
+li:hover {
+    color: #e5e5f1; 
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://image.tmdb.org/t/p/original//qdIMHd4sEfJSckfVJfKQvisL02a.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+    border-radius: 50px;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #e5e5f1;
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+.button {
+    width: 300px;
+    height: 60px;
+    background-color: #fff;
+    color: #000;
+    padding: 20px 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #7194c5;
+    color: #fff;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+
+.card {
+    width: calc(33.33% - 40px);
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    padding: 20px 10px 0 10px; 
+    color: #fff;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url(https://startefacts.com/upload/editor/b9b5fbd0358e0033664d88eed457f612_cropped_666x1003.jpg);
+}
+
+.banner-2 {
+    background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/140702155001-05-forrest-gump-restricted.jpg?q=w_2740,h_1856,x_0,y_0,c_fill/h_618)
+}
+
+.banner-3 {
+    background-image: url(https://www.recenzent.org.ua/wp-content/uploads/2021/04/forrest-gump-16.jpg);
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    @media(max-width: 768px){
+        .footer-navigation {
+            display: block;
+        }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: center;
+    }
+
+    #trailer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        vertical-align: center;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .cards-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
